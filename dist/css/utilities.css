@@ -1,0 +1,215 @@
+/* Text colors */
+.text-primary {
+    color: #45754d;
+}
+
+.text-secondary {
+    color: #59d5da;
+}
+
+.text-alt {
+    color: red;
+
+}
+
+/* Button */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #305335;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary, .bg-primary {
+   background: #305335;
+   color: #fff;
+}
+.btn-secondary, .bg-secondary {
+   background: #305335;
+   color: #fff;
+}
+.btn-dark, .bg-dark {
+   background: #333;
+   color: #fff;
+}
+.btn-light, .bg-light {
+   background: #f4f4f4;
+   color: #333;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+/* Flex items */
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    
+}
+
+.flex-items > div {
+    padding: 20px;
+}
+
+/* Flex columns */
+
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+}
+
+/* Section header */
+
+.section-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.section-padding {
+    padding: 1px 20px 40px;
+}
+
+/* Flex grid */
+
+.flex-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+/* Card flips n hwat not  */
+
+.cards__front, .cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.cards__front {
+    /* height: 100%; */
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+  }
+
+/* .cards__front img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    height: 225px;
+    width: 225px;
+    
+  } */
+
+.cards__back {
+     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 10px;
+    color: #f2f2f2;
+
+  }
+  
+.cards__single {
+    -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  position: relative;
+transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+.cards__single.flip {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+
