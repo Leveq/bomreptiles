@@ -214,6 +214,33 @@ a {
     margin-right: 30px;
 }
 
+/* solo contact form  */
+
+#contact-page > .footer {
+    position: absolute;
+}
+
+.contact-f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.main-f .callback-form {
+    width: 80%;
+}
+
+.callback-form input {
+    border-radius: 5px;
+}
+
+
+
 /* ***** */
 
 /* Mobile */
@@ -384,6 +411,13 @@ a {
         position: relative;
         bottom: 0;
     }
-  
+
+    #contact-page {
+        padding: 2.5rem 0;
+    }
+
+    #contact-page > .footer {
+        
+    }
 
 }

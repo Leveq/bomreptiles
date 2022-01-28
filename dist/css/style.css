@@ -186,7 +186,7 @@ img {
 
 .img-grid {
     display: grid;
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
     align-items: center;
     justify-content: center;

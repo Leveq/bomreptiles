@@ -13,7 +13,7 @@
     <title>Feeders | Rat & Mice</title>
 </head>
 
-<body>
+<body id="feeders">
 
     <header class="header-f">
       <div id="navbar" class="navbar top">
@@ -22,11 +22,11 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="/dist/index.html#home">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="/dist/index.html#cases">Cases</a></li>
                     <li><a href="#prices">Prices</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="/dist/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>  
@@ -192,7 +192,9 @@
     <p>Copyright &copy; 2021 - B.O.M Reptiles</p>
 </footer>
 
-<script src="app.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous">
+    </script>  -->
 
      <script>
         const navbar = document.getElementById('navbar');
@@ -215,6 +217,7 @@
         };
 
         
+        // Smooth Scrolling
         $('#navbar a, .btn').on('click', function (e) {
             if (this.hash !== '') {
                 e.preventDefault();
