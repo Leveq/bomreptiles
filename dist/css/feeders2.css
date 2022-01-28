@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Black Ops One', cursive;
-    background: #333;
+    background: #333 url(/dist/images/logo2.png) no-repeat fixed center;
     color: #fff;
     line-height: 1.6;
 }
@@ -34,6 +34,7 @@ body {
     top: 0px;
     padding: 0 30px;
     transition: 0.5s;
+    z-index: 1;
 }
 
 ul {
@@ -83,7 +84,12 @@ a {
 }
 
 .card {
-    border-radius: 5px;
+    background: linear-gradient(
+    to bottom,
+    rgba(52, 52, 52, 0.4),
+    rgba(52, 52, 52, 0.1));
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -300,7 +306,7 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "b a"
+            "a b"
             "c c"
             "d e";  
         padding-bottom: 3rem;
@@ -416,8 +422,8 @@ a {
         padding: 2.5rem 0;
     }
 
-    #contact-page > .footer {
+    /* #contact-page > .footer {
         
-    }
+    } */
 
 }
