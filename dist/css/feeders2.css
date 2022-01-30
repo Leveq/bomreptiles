@@ -13,7 +13,7 @@ body {
     font-family: 'Black Ops One', cursive;
     background: #333 url(/dist/images/logo2.png) no-repeat fixed center;
     color: #fff;
-    line-height: 1.6;
+    line-height: 2;
 }
 
 
@@ -99,18 +99,20 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    padding: 0 1rem;
-    color: #f2f2f2ec;
+    padding: 0 2rem;
+    color: #fff;
     text-align: justify;
     font-family: 'Oswald', sans-serif;
     font-size: large;
 }
 
 .a li {
-    padding-bottom: 10px;
+    padding: 0 2rem;
 }
 
 .a ol li::marker {
+    font-size: 1.2rem;
+    font-weight: bold;
     color: red;
 }
 
@@ -171,11 +173,15 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    line-height: 1.2;
+    padding: 3px;
+    grid-gap: 0.5rem;
 }
 
 .d {
     grid-column: 2;
     grid-row: 6;
+    padding: 0 2rem;
 }
 
 .d li {
@@ -246,7 +252,6 @@ a {
     flex-direction: row;
     box-shadow: rgba(5, 5, 8, 0.808) 0px 6px 12px -2px, 
     rgb(0, 0, 0) 0px 3px 7px -3px;
-    
 }
 
 .contact-f {
@@ -256,6 +261,7 @@ a {
     justify-content: center;
     width: 450px;
     height: 450px;
+    border-radius: 5px 5px 0 0;
 }
 
 
@@ -325,8 +331,6 @@ a {
     }
 
     .e {
-        padding: 1% 0;
-        grid-gap: 1rem;
         grid-area: e;
     }
 
@@ -454,6 +458,16 @@ a {
 
     .card.b {
         flex-direction: column;
+    }
+
+    .a ol {
+        list-style-position: inside;
+        margin: 0.5rem;
+        padding: 3px;
+    }
+
+    .a li {
+       padding: 5px 1.5rem; 
     }
 
     .a h1 {
