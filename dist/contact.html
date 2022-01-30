@@ -30,8 +30,9 @@
       </div>  
   </header>
   <main class="main-f">
-      <div class="contact-f bg-light">
-          <h2>Request Callback</h2>
+      <div class="container-c">
+        <div class="contact-f bg-light-glass">
+            <h2>Request Callback</h2>
           <form action="" class="callback-form">
               <div class="form-control">
                   <label for="name"></label>
@@ -47,7 +48,9 @@
               </div>
               <input type="submit" value="Send" id="submit" class="btn" />
           </form>
-      </div>
+        </div>
+        <div id="map"></div>
+      </div>      
   </main>
 
   <footer class="footer">
@@ -59,6 +62,12 @@
     </div>
         <p>Copyright &copy; 2021 - B.O.M Reptiles</p>
     </footer>
-  
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTjSmsYnzVT1mDk-WfuYjBWX3alILPUAQ&callback=initMap&libraries=&v=weekly&channel=2"
+      async>
+    </script>
+
+    <script src="/dist/app.js"></script>
 </body>
 </html>

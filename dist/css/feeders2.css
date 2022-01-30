@@ -69,13 +69,6 @@ a {
     font-family: 'Shizuru', cursive;
 }
 
-.main-f {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .wrapper {
     display: grid;
     grid-gap: 1rem;
@@ -109,6 +102,8 @@ a {
     padding: 0 1rem;
     color: #f2f2f2ec;
     text-align: justify;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
 }
 
 .a li {
@@ -158,6 +153,11 @@ a {
     height: 300px;
 }
 
+.p-container {
+    font-family: 'Oswald', sans-serif;
+    font-size: large; 
+}
+
 .c {
     grid-column: 4;
     grid-row: 1/7;
@@ -178,9 +178,21 @@ a {
     grid-row: 6;
 }
 
+.d li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+
+
 .e {
     grid-column: 3;
     grid-row: 6;
+}
+
+.e li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
 }
 
 .e ul:nth-of-type(10) {
@@ -222,8 +234,19 @@ a {
 
 /* solo contact form  */
 
-#contact-page > .footer {
-    position: absolute;
+.main-f {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-c {
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(5, 5, 8, 0.808) 0px 6px 12px -2px, 
+    rgb(0, 0, 0) 0px 3px 7px -3px;
+    
 }
 
 .contact-f {
@@ -231,21 +254,26 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    height: 500px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 450px;
+    height: 450px;
 }
+
 
 .main-f .callback-form {
     width: 80%;
 }
 
+/* Set the size of the div element that contains the map */
+#map {
+    height: 450px;
+    /* The height is 400 pixels */
+    width: 450px;
+    /* The width is the width of the web page */
+  }
+
 .callback-form input {
     border-radius: 5px;
 }
-
-
 
 /* ***** */
 
@@ -345,8 +373,24 @@ a {
         grid-template-areas:
             "a b"
             "c c"
-            "d e";
-            
+            "d e";     
+    }
+
+    .a h1 {
+        margin-bottom: 2rem;
+    }
+
+    .a h2 {
+        padding: 8px;
+        margin-top: 4rem;
+    }
+
+    .a ol li {
+        margin: 5px;
+    }
+
+    .b-container {
+        margin-bottom: 1rem;
     }
 
 }
@@ -412,18 +456,44 @@ a {
         flex-direction: column;
     }
 
+    .a h1 {
+      margin: auto;  
+    }
+
+    .a h2 {
+        padding: 8px;
+        margin-top: 1rem;
+    }
+
 
     .footer {
         position: relative;
         bottom: 0;
     }
 
-    #contact-page {
+    /* #contact-page {
         padding: 2.5rem 0;
+    } */
+
+    .container-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin: 120px 0.2rem 0;
+    }
+    
+    .contact-f {
+        width: 100%;
     }
 
-    /* #contact-page > .footer {
-        
-    } */
+    #map {
+        width: 100%;
+    }
+
+
+    
+
+
 
 }
