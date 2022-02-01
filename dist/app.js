@@ -20,18 +20,23 @@ const heroImg = document.querySelector('#hero')
 
 
 // hero unsplash api 
-fetch(endpoint)
-  .then((respone) => {
-    return respone.json();
-  })
-  .then((jsonData) => {
-    heroImg.src = jsonData.urls.regular;
-    console.log(heroImg.src);
+// fetch(endpoint)
+//   .then((respone) => {
+//     return respone.json();
+//   })
+//   .then((jsonData) => {
+//     heroImg.src = jsonData.urls.regular;
+//     console.log(heroImg.src);
+//   })
+
+
+const card = document.querySelectorAll("#card-d, #card-e");
+  card.forEach(card => {
+    card.addEventListener('click', (e) =>{
+      card.classList.toggle('flipCard')
+    })
   })
 
-// feeder Card flip
-  const card = document.querySelector('.card-inner');
 
-card.addEventListener('click', function () {
-  card.classList.toggle('is-flipped');
-});
+
+
