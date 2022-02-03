@@ -74,7 +74,6 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-   /* height: 87vh; */
 }
 
 .wrapper {
@@ -412,10 +411,19 @@ a {
 
 /* ***** */
 
-@media(max-width: 2090px) {
+@media(max-width: 2560px) {
+
+    .a h2 {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
 
     .b {
         flex-direction: column;
+    }
+
+    .feeder-f {
+        height: 85vh;
     }
 
     .wrapper {
@@ -426,6 +434,10 @@ a {
 
 
 @media(max-width: 1920px) {
+
+    .feeder-f {
+        height: 85vh;
+    }
 
     .a {
         display: flex;
@@ -469,6 +481,12 @@ a {
         width: 80%;
     }
 
+}
+
+@media(max-width: 1536px) {
+    .feeder-f {
+        height: 100vh;
+    }
 }
 
 

@@ -20,13 +20,13 @@ const heroImg = document.querySelector('#hero');
 
 
 // hero unsplash api 
-// fetch(endpoint)
-//   .then((respone) => {
-//     return respone.json();
-//   })
-//   .then((jsonData) => {
-//     heroImg.src = jsonData.urls.regular;
-//   });
+fetch(endpoint)
+  .then((respone) => {
+    return respone.json();
+  })
+  .then((jsonData) => {
+    heroImg.src = jsonData.urls.regular;
+  });
 
 
 const card = document.querySelectorAll("#card-d, #card-e");
