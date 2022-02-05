@@ -221,6 +221,10 @@ position: absolute;
 
 }
 
+#contact {
+    margin-bottom: 2rem;
+}
+
 #contact .column-2  {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -286,7 +290,7 @@ position: absolute;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 200px;
+    height: 100px;
 }
 
 .footer a {
@@ -298,7 +302,7 @@ position: absolute;
 }
 
 .footer .social > * {
-    margin-right: 30px;
+    margin: 1rem;
 }
 
 /* Mobile */

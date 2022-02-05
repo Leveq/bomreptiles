@@ -37,38 +37,6 @@ body {
     z-index: 1;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-.navbar.top {
-    background: transparent;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 5px;
-}
-
-.navbar a:hover {
-    border-bottom: #28a745 2px solid;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar .logo {
-    font-weight: 800;
-    font-family: 'Shizuru', cursive;
-}
-
 .feeder-f {
     display: flex;
     align-items: center;
@@ -330,39 +298,11 @@ a {
     grid-column: 4;
 }
 
-/* Footer */
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100px;
-}
-
-.footer a {
-    color: #fff;
-    padding: 3px;
-}
-
-.footer p {
-    margin: 3px;
-    padding: 3px;
-}
-
-.footer a:hover {
-    color: #28a745;
-}
-
-.footer .social > * {
-    margin-right: 30px;
-}
 
 /* solo contact form  */
+
+
 
 .main-f {
     min-height: 90vh;
@@ -437,7 +377,7 @@ a {
 @media(max-width: 1920px) {
 
     .feeder-f {
-        height: 85vh;
+        height: 100%;
     }
 
     .a {
@@ -483,13 +423,6 @@ a {
     }
 
 }
-
-@media(max-width: 1536px) {
-    .feeder-f {
-        height: 100%;
-    }
-}
-
 
 @media(max-width: 1440px) {
 
@@ -648,7 +581,7 @@ a {
     }
 
     .d .card-front {
-        background: url(/dist/images/feedersx3.png) -35% 300% no-repeat;
+        background: url(/dist/images/feedersx3.png) -20% 450% no-repeat;
         background-size: 200px;  
     }
 
@@ -710,10 +643,5 @@ a {
         width: 100%;
         border-radius: 0;
     }
-
-
-    
-
-
 
 }
