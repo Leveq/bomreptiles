@@ -72,7 +72,8 @@ body {
 }
 
 .a h1 {
-    padding: 5px;
+    margin: 1rem;
+    padding: 3rem 0;
 }
 
 
@@ -148,10 +149,66 @@ body {
 }
 
 .c {
+    display: flex;
+    flex-direction: column;
     grid-column: 4;
     grid-row: 1/7;
-    width: 380px;
     backdrop-filter: blur(10px);
+}
+
+.card-c {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 2rem;
+    max-width: 420px;
+}
+
+.card-c p {
+    font-family: 'Oswald';
+}
+
+.data-f {
+    margin: 0.5rem;
+    font-size: 12px;
+    font-weight: 500;
+    background: #f4f4f4;
+    color: #000;
+    height: fit-content;
+    border-radius: 5px;
+    line-height: normal;
+    min-width: 480px;
+}
+
+.c table {
+    font-family: 'Oswald', sans-serif;
+    border-collapse: collapse;
+    margin-top: 4px;
+}
+  
+.c td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 1px;
+}
+  
+.c tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.data-foot {
+    font-family: 'Oswald';
+    font-weight: 600;
+    padding: 0 3px;
+}
+
+.data-foot a {
+    color: #305335;
+    text-decoration: underline;
+}
+
+.data-foot a:hover {
+    color: blue;
 }
 
 .card-face {
@@ -398,8 +455,13 @@ body {
     }
 
     .c {
+        flex-direction: row;
         grid-area: c;
         width: 100%;
+    }
+
+    .card-c {
+        margin: auto;
     }
 
     .d {
@@ -478,6 +540,10 @@ body {
         margin-bottom: 1rem;
     }
 
+    .c {
+        flex-direction: row;
+    }
+
     .d {
         height: 100%;
     }
@@ -491,7 +557,6 @@ body {
         background: url(/dist/images/rat.png) -5% 250% no-repeat;
         background-size: 200px;  
     }
-
 
 }
 
@@ -550,7 +615,7 @@ body {
             "d"
             "e";
         justify-content: center;
-        padding-top: 15%;
+        padding: 15% 2%;
         width: 100%;
         margin: auto;
         perspective: 10000px;
@@ -567,12 +632,37 @@ body {
     }
 
     .a h1 {
-      margin: auto;  
+        margin: auto;
+        padding-top: 2rem;
     }
 
     .a h2 {
         padding: 8px;
         margin-top: 1rem;
+    }
+
+    .br-mob {
+        display: none;
+    }
+
+    .c {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card-c h1 {
+        padding: 1rem;
+    }
+
+    .card-c a {
+        margin: 1rem;
+    }
+
+    .data-f {
+        min-width: 100%;
     }
 
     .d {
