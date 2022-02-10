@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://kit.fontawesome.com/0e9482b51e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/lightbox.min.css">
     <title>Welcome | B.O.M Reptiles</title>
 </head>
 
@@ -43,7 +45,7 @@
         <section id="about" class="icons ">
             <div class="flex-items">
                 <div>
-                    <i class="fas fa-hiking"></i>
+                    <img class="icon-png" src="/dist/images/tortoise.png" alt="">
                     <div>
                         <h3>Reptiles</h3>
                         <p>
@@ -53,9 +55,9 @@
                     </div>
                 </div>
                 <div>
-                    <i class="fas fa-utensils"></i>
+                    <img src="/dist/images/rat (1).png" alt="" class="icon-png">
                     <div>
-                        <h3>Frozen food</h3>
+                        <h3>Feeders</h3>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Tempore, iusto!
@@ -63,7 +65,7 @@
                     </div>
                 </div>
                 <div>
-                    <i class="fas fa-leaf"></i>
+                    <img src="/dist/images/creature.png" alt="" class="icon-png">
                     <div>
                         <h3>Enviorments</h3>
                         <p>
@@ -113,12 +115,29 @@
                 </p>
             </header>
             <div class="img-grid">
-                <img src="images/case2.png" alt="" />
-                <img src="images/case3.png" alt="" />
-                <img src="images/case5.png" alt="" />
-                <img src="images/case4_.png" alt="" />
-                <img src="images/case4.png" alt="" />
-                <img src="images/case6.png" alt="" />
+                <a href="/dist/images/case2.png" data-lightbox="cases"
+                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                    <img class="img-2" src="/dist/images/case2.png" alt="image" />
+                </a>
+                  <a href="/dist/images/case3.png" data-lightbox="cases">
+                    <img class="img-3" src="/dist/images/case3.png" alt="image" />
+                </a>
+                <a href="/dist/images/case5.png" data-lightbox="cases"
+                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                    <img class="img-5" src="images/case5.png" alt="" />
+                </a>
+                <a href="/dist/images/case4_.png" data-lightbox="cases"
+                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                    <img class="cse-4" src="images/case4_.png" alt="" />
+                </a>
+                <a href="/dist/images/case4.png" data-lightbox="cases"
+                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                    <img class="img-4" src="images/case4.png" alt="" />
+                </a>
+                <a href="/dist/images/case6.png" data-lightbox="cases"
+                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                    <img class="img-6" src="images/case6.png" alt="" />
+                </a>
             </div>
         </section>
 
@@ -188,7 +207,7 @@
                 <div class="column">
                     <div class="column-2 bg-light-glass">
                         <h2>Request Callback</h2>
-                        <form action="" class="callback-form">
+                        <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
                                 <input type="text" name="name" id="name" placeholder="Enter name" />
@@ -222,6 +241,9 @@
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous">
     </script>
+
+    <script src="/dist/lightbox.min.js"></script>
+
     <script>
         const navbar = document.getElementById('navbar');
         let scrolled = false;

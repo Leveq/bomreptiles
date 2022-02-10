@@ -165,7 +165,16 @@ body {
 }
 
 .card-c p {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
+}
+
+.c-link {
+    text-decoration: underline;
+    color: #45754D;
+}
+
+.c-link:hover {
+    color: blue;
 }
 
 .data-f {
@@ -661,8 +670,16 @@ body {
         margin: 1rem;
     }
 
+    .card-c p {
+        padding: 0 1rem;
+        margin: 0 1rem;
+        text-align: justify;
+        font-size: 18px;
+    }
+
     .data-f {
         min-width: 100%;
+        font-size: x-small;
     }
 
     .d {

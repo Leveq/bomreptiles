@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -45,6 +46,8 @@ h1, h2 {
 }
 
 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
     margin: 10px 0;
 }
 
@@ -184,6 +187,12 @@ position: absolute;
     margin-bottom: 15px;
 }
 
+.icon-png {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(3px 7px 2px #1e2509);
+}
+
 #about {
     background-color: #333;
 }
@@ -193,36 +202,42 @@ position: absolute;
 #cases img {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     border-radius: 10px;
-
+    width: 100%;
 }
-
-
 
 #cases img:hover {
     opacity: 0.7;
 }
 
-
-
 .img-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4rem;
+    grid-template-rows: auto;
+    margin: 0 1%;
     align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
-    padding: 0 20px;
     border-radius: 5px;
     background: linear-gradient(
     to bottom,
     rgba(52, 52, 52, 0.4),
     rgba(52, 52, 52, 0));
     backdrop-filter: blur(10px);
+}
 
+.img-grid img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    max-height: 480px;
+    object-fit: cover;
 }
 
 #contact {
     margin-bottom: 2rem;
+}
+
+#contact h2 {
+    margin: 0 0 3rem;
 }
 
 #contact .column-2  {
@@ -267,10 +282,11 @@ position: absolute;
 }
 
 .callback-form input {
-    width: 100%;
+    width: 85%;
     padding: 4px;
     height: 40px;
-    border: #f5f5f5 1px solid;
+    border: transparent;
+    border-radius: 5px;
 }
 
 .callback-form input:focus {
@@ -306,6 +322,26 @@ position: absolute;
 }
 
 /* Mobile */
+
+@media(min-width: 2560px) {
+
+    #cases img {
+     width: 100%;
+     height: 100%;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(3, 600px);
+        align-content: stretch;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+
 @media(max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -331,6 +367,12 @@ position: absolute;
    .img-grid {
        display: flex;
        flex-direction: column;
+       grid-gap: 1rem;
+   }
+
+   #cases img {
+       width: 100%;
+       height: 100%;
    }
 
    #Feeders .column .column-2 {
@@ -339,8 +381,7 @@ position: absolute;
 }
 
    .feeders-img {
-    margin: 0%;
-
+    margin: auto;
 }
 
    #owners {
