@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Black Ops One', cursive;
-    background: #333 url(/dist/images/logo2.png) no-repeat fixed center;
+    background: #333 url(../images/logo2.png) no-repeat fixed center;
     color: #fff;
     line-height: 2;
 }
@@ -281,7 +281,7 @@ body {
 }
 
 .d .card-front {
-    background: url(/dist/images/feedersx3.png) -25% -350% no-repeat;
+    background: url(../images/feedersx3.png) -25% -350% no-repeat;
     background-size: 250px;  
 }
 
@@ -330,7 +330,7 @@ body {
 }
 
 .e .card-front {
-    background: url(/dist/images/rat.png) -5% 190% no-repeat;
+    background: url(../images/rat.png) -5% 190% no-repeat;
     background-size: 200px;  
 }
 
@@ -396,6 +396,7 @@ body {
 
 
 .main-f .callback-form {
+    text-align: center;
     width: 80%;
 }
 
@@ -558,12 +559,12 @@ body {
     }
 
     .d .card-front {
-        background: url(/dist/images/feedersx3.png) -25% -600% no-repeat;
+        background: url(../images/feedersx3.png) -25% -600% no-repeat;
         background-size: 250px;  
     }
 
     .e .card-front {
-        background: url(/dist/images/rat.png) -5% 250% no-repeat;
+        background: url(../images/rat.png) -5% 250% no-repeat;
         background-size: 200px;  
     }
 
@@ -688,7 +689,7 @@ body {
     }
 
     .d .card-front {
-        background: url(/dist/images/feedersx3.png) -20% 450% no-repeat;
+        background: url(../images/feedersx3.png) -20% 450% no-repeat;
         background-size: 200px;  
     }
 
@@ -718,7 +719,7 @@ body {
     }
 
     .e .card-front {
-        background: url(/dist/images/rat.png) -15% 200% no-repeat;
+        background: url(../images/rat.png) -15% 200% no-repeat;
         background-size: 200px;  
     }
 
@@ -733,12 +734,17 @@ body {
         bottom: 0;
     }
 
+    .main-f {
+        padding: 0 0 1rem;
+    }
+
     .container-c {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 400px;
-        margin: 120px 0.2rem 0;
+        margin: auto;
+        
     }
     
     .contact-f {
