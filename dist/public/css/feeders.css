@@ -737,7 +737,8 @@ body {
     }
 
     .main-f {
-        padding: 0 0 1rem;
+        padding: 120px 0 1rem;
+        margin-top: 19px;
     }
 
     .container-c {
