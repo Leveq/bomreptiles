@@ -28,7 +28,7 @@ fetch(endpoint)
     heroImg.src = jsonData.urls.regular;
   });
 
-
+// flip card function
 const card = document.querySelectorAll("#card-d, #card-e");
   card.forEach(card => {
     card.addEventListener('click', (e) =>{

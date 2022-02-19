@@ -229,6 +229,7 @@ body {
     height: 100%;
     text-align: center;
     backface-visibility: hidden;
+    transform: rotateX(0deg);
 }
 
 .card-back {
@@ -240,6 +241,7 @@ body {
 
 .flipCard {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .card.b {
