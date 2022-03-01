@@ -281,15 +281,11 @@ position: absolute;
     flex: 1;
 }
 
-#feeders, .column {
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-}
-
-
 .feedersx3 {
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .feedersx3 img {
@@ -322,6 +318,7 @@ position: absolute;
 .callback-form {
     width: 100%;
     padding: 20px 0;
+    text-align: center;
 }
 
 .callback-form label {
