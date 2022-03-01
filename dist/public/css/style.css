@@ -444,6 +444,7 @@ position: absolute;
     width: auto;
     height: auto;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 
@@ -489,9 +490,11 @@ position: absolute;
     }
 
     #contact {
-        display: flex;
-        flex-direction: column;
         margin: 0 0.3rem 1rem;
+    }
+
+    #contact > .row {
+        flex-direction: column-reverse;
     }
 
     #contact h2 {
