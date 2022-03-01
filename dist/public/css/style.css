@@ -384,7 +384,7 @@ position: absolute;
 
 /* Mobile */
 
-@media(max-width: 2560px) {
+@media(max-width: 3000px) {
 
     /* #cases img {
      width: 100%;
@@ -505,7 +505,8 @@ position: absolute;
     .btn-txt {
         display: inline-block;
         min-width: 141px;
-        padding: 10px 30px;
+        padding: 5px 3px;
+        margin: 2rem 5px 0;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -514,12 +515,11 @@ position: absolute;
     }
 
     .btn-call {
-        background-color: #45754d;
-        margin-bottom: 10px;
+        background-color: #4267B2;
     }
 
     .btn-txt {
-        background-color: #45754d;
+        background-color: #4267B2;
     }
 
     .callback-form input {
