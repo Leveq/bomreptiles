@@ -15,7 +15,8 @@ function initMap() {
 
 
 const clientID = "fF-9ZKA7KuFIpaxfWv-zGRq_VgnY98Lq0jSL--o3V0M";
-const endpoint = `https://api.unsplash.com/photos/random?query=reptiles&client_id=${clientID}`;
+const endpoint = `https://api.unsplash.com/photos/random?
+query=reptiles&client_id=${clientID}`;
 const heroImg = document.querySelector('#hero');
 
 

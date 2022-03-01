@@ -58,7 +58,7 @@
                     <img src="images/rat (1).png" alt="" class="icon-png">
                     <div>
                         <h3>Feeders</h3>
-                        <p>
+                        <p class="p__text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Tempore, iusto!
                         </p>
@@ -89,7 +89,7 @@
                     <div class="column-2 bg-primary glass">
                         <h4>What you are looking for</h4>
                         <h2>We provide custom solutions</h2>
-                        <p>
+                        <p class="p__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
                             illum, animi earum ea amet sequi reiciendis sit corporis sunt
                             iusto cupiditate odio maxime adipisci cumque eligendi nemo
@@ -109,7 +109,7 @@
             <header class="section-header">
                 <h4>This is what we do</h4>
                 <h2>Custom Enclosures</h2>
-                <p>
+                <p class="p__text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
                     dolore!
                 </p>
@@ -144,20 +144,17 @@
         <!-- Feeders -->
         <section id="Feeders" class="flex-columns flex-reverse">
             <div class="row">
-                <div class="feeders-columns">
-                    <div class="feeders-img">
-                        <img src="images/feedersx3.png" alt="" />
-                    </div>
+
+                <div class="column feedersx3">
+                    <img src="images/feedersx3.png" alt="" />
                 </div>
-                <div class="column" style="padding-top: 2rem;">
+
+                <div class="column">
                     <div class="column-2 bg-secondary feed-home glass">
                         <!-- <h4>April 16 2020</h4> -->
                         <h2>Frozen Rats & Mice</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Alias
-                            illum, animi earum ea amet sequi reiciendis sit corporis <br> sunt
-                            iusto cupiditate odio maxime adipisci cumque eligendi nemo
-                            dolore id itaque?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi facere aspernatur quos quia vel commodi fugit, maiores quasi sed quas quidem maxime praesentium qui ducimus quod enim expedita assumenda eaque! Ab dolorem incidunt ipsum cumque? Eius provident tempora suscipit repellat voluptatibus repudiandae sed. Laborum debitis impedit accusamus fuga aut?
                         </p>
                         <a href="feeders.html" class="btn btn-outline">
                             <i class="fas fa-chevron-circle-right"></i>
@@ -173,39 +170,30 @@
             <header class="section-header">
                 <h4>Who we are</h4>
                 <h2>Our Professional Team</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-                    dolore!
-                </p>
+                <div class="team_p">
+                    <div class="team-img">
+                    <img src="images/aj.jpg" alt="" />
+                    <h4 class="p__text">AJ Stewert</h4>
+                    <!-- <p>President</p> -->
+                    </div>
+                    <div class="team-img">
+                    <img src="images/salina.jpg" alt="" />
+                    <h4 class="p__text">Salina Nichols</h4>
+                    <!-- <p>President</p> -->
+                    </div>
+                </div>
             </header>
-            <!-- <div class="flex-items">
-                <div>
-                    <img src="images/team/person1.jpg" alt="" />
-                    <h4>AJ Stewert</h4>
-                    <p>President</p>
-                </div>
-                <div>
-                    <img src="images/team/person2.jpg" alt="" />
-                    <h4>Salina Nichols</h4>
-                    <p>Vice President</p>
-                </div>
-                <div>
-                    <img src="images/team/person3.jpg" alt="" />
-                    <h4>Steve Smith</h4>
-                    <p>Marketing Head</p>
-            </div> -->
+          
         </section>
 
         <!-- Contact -->
         <section id="contact" class="flex-columns">
             <div class="row">
                 <div class="column">
-                    <div class="column-1">
-                        <img id="owners" src="images/owners.jpg" />
-                    </div>
+                    <div id="map" class="map_home"></div>
                 </div>
                 <div class="column">
-                    <div class="column-2 bg-light-glass">
+                    <div class="contact_home column-2 bg-light-glass">
                         <h2>Request Callback</h2>
                         <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="callback-form">
                             <div class="form-control">
@@ -222,6 +210,8 @@
                             </div>
                             <input type="submit" value="Send" id="submit" class="btn" />
                         </form>
+                        <a href="tel:1-979-215-1378" class="btn-call">Call us 📲</a>
+                        <a href="sms:1-979-215-1378" class="btn-txt">Text us 📞</a>
                     </div>
                 </div>
             </div>
@@ -237,6 +227,11 @@
         </div>
         <p>Copyright &copy; 2021 - B.O.M Reptiles</p>
     </footer>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTjSmsYnzVT1mDk-WfuYjBWX3alILPUAQ&callback=initMap&libraries=&v=weekly&channel=2"
+      async>
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous">
