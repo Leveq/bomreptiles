@@ -47,6 +47,8 @@
                   <input type="text" name="phone" id="phone" placeholder="Enter phone" />
               </div>
               <input type="submit" value="Send" id="submit" class="btn" />
+              <a href="tel:1-979-215-1378" class="btn-call">Call 📞</a>
+              <a href="sms:1-979-215-1378" class="btn-txt">Text 📲</a>
           </form>
         </div>
         <div id="map"></div>
@@ -66,6 +68,27 @@
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTjSmsYnzVT1mDk-WfuYjBWX3alILPUAQ&callback=initMap&libraries=&v=weekly&channel=2"
       async>
+    </script>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+let scrolled = false;
+
+window.onscroll = function () {
+    if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+        }, 0);
+    } else {
+        navbar.classList.add('top');
+        scrolled = false;
+    }
+};
     </script>
 
     <script src="app.js"></script>

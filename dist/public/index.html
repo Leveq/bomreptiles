@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/0e9482b51e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Welcome | B.O.M Reptiles</title>
 </head>
 
@@ -21,20 +22,40 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cases">Cases</a></li>
-                    <li><a href="#Feeders">Feeders</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="feeders.html">Feeders</a></li>
+                    <li><a href="#">Supplies</a></li>
+                    <li><a href="#">Merch</a></li>
+                    <li>
+                        <a href="#">Services <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub__menu">
+                            <li><a href="#">Nail Trimming</a></li>
+                            <li><a href="#">Shed Assist</a></li>
+                            <li><a href="#">Fecal Parasite Testing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Education <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub__menu">
+                            <li><a href="#">Care Sheets</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">More <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub__menu">
+                            <li><a href="#">Adoption Center</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
 
         <div class="content">
             <h1>Bottom of the Map Reptiles</h1>
-            <p>We make custom enclosures, backgrounds and quality frozen feeders
+            <p>We make custom enclosures, provide quality feeders, pet Education and Services
                 <br>
-                Serving South Texas
+                Serving South Texas <br> <object data="images/Texas_flag_map.svg" width="35" height="35" type=""></object>
             </p>
             <a href="#about" class="btn"><i class="fas fa-chevron-circle-right"></i></i> Read More</a>
         </div>
@@ -44,7 +65,7 @@
         <!-- About: Icons -->
         <section id="about" class="icons ">
             <div class="flex-items">
-                <div>
+                <div data-aos="fade-right">
                     <img class="icon-png" src="images/tortoise.png" alt="">
                     <div>
                         <h3>Reptiles</h3>
@@ -54,7 +75,7 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <img src="images/rat (1).png" alt="" class="icon-png">
                     <div>
                         <h3>Feeders</h3>
@@ -64,7 +85,7 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img src="images/creature.png" alt="" class="icon-png">
                     <div>
                         <h3>Enviorments</h3>
@@ -80,12 +101,12 @@
         <!-- About:Solutions -->
         <section class="solutions flex-columns">
             <div class="row">
-                <div class="column">
+                <div data-aos="fade-right" class="column">
                     <div class="column-1">
                         <img src="images/shop.jpg" alt="" />
                     </div>
                 </div>
-                <div class="column">
+                <div data-aos="fade-left" class="column">
                     <div class="column-2 bg-primary glass">
                         <h4>What you are looking for</h4>
                         <h2>We provide custom solutions</h2>
@@ -107,7 +128,7 @@
         <!-- Cases -->
         <section id="cases" class="section-padding">
             <header class="section-header">
-                <h4>This is what we do</h4>
+                <!-- <h4>This is what we do</h4> -->
                 <h2>Custom Enclosures</h2>
                 <p class="p__text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
@@ -115,27 +136,27 @@
                 </p>
             </header>
             <div class="img-grid">
-                <a href="images/case2.png" data-lightbox="cases"
-                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                <a data-aos="zoom-in-left" href="images/case2.png" data-lightbox="cases"
+                data-title="case info">
                     <img class="img-2" src="images/case2.png" alt="image" />
                 </a>
-                  <a href="images/case3.png" data-lightbox="cases">
+                  <a data-aos="zoom-in-right" href="images/case3.png" data-lightbox="cases">
                     <img class="img-3" src="images/case3.png" alt="image" />
                 </a>
-                <a href="images/case5.png" data-lightbox="cases"
-                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                <a data-aos="zoom-in-left" href="images/case5.png" data-lightbox="cases"
+                data-title="Case info">
                     <img class="img-5" src="images/case5.png" alt="" />
                 </a>
-                <a href="images/case4_.png" data-lightbox="cases"
-                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                <a data-aos="zoom-in-right" href="images/case4_.png" data-lightbox="cases"
+                data-title="case info">
                     <img class="cse-4" src="images/case4_.png" alt="" />
                 </a>
-                <a href="images/case4.png" data-lightbox="cases"
-                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                <a data-aos="zoom-in-left" href="images/case4.png" data-lightbox="cases"
+                data-title="case info">
                     <img class="img-4" src="images/case4.png" alt="" />
                 </a>
-                <a href="images/case6.png" data-lightbox="cases"
-                data-title="This is a custom enclouse for _____. It was made with x and y and incudles room for lights and ------.">
+                <a data-aos="zoom-in-right" href="images/case6.png" data-lightbox="cases"
+                data-title="case info">
                     <img class="img-6" src="images/case6.png" alt="" />
                 </a>
             </div>
@@ -144,21 +165,20 @@
         <!-- Feeders -->
         <section id="Feeders" class="flex-columns flex-reverse">
             <div class="row">
-
-                <div class="column feedersx3">
+                <div data-aos="fade-left" class="column feedersx3">
                     <img src="images/feedersx3.png" alt="" />
                 </div>
 
                 <div class="column">
-                    <div class="column-2 bg-secondary feed-home glass">
+                    <div data-aos="fade-right" class="column-2 bg-secondary feed-home glass">
                         <!-- <h4>April 16 2020</h4> -->
-                        <h2>Frozen Rats & Mice</h2>
+                        <h2>Feeders Menu</h2>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi facere aspernatur quos quia vel commodi fugit, maiores quasi sed quas quidem maxime praesentium qui ducimus quod enim expedita assumenda eaque! Ab dolorem incidunt ipsum cumque? Eius provident tempora suscipit repellat voluptatibus repudiandae sed. Laborum debitis impedit accusamus fuga aut?
                         </p>
                         <a href="feeders.html" class="btn btn-outline">
                             <i class="fas fa-chevron-circle-right"></i>
-                            Frozen Feeders
+                            Menu
                         </a>
                     </div>
                 </div>
@@ -168,15 +188,15 @@
         <!-- Team -->
         <section id="team" class="team section-padding">
             <header class="section-header">
-                <h4>Who we are</h4>
+                <!-- <h4>Who we are</h4> -->
                 <h2>Our Professional Team</h2>
                 <div class="team_p">
-                    <div class="team-img">
+                    <div data-aos="zoom-in" class="team-img">
                     <img src="images/aj.jpg" alt="" />
                     <h4 class="p__text">AJ Stewert</h4>
                     <!-- <p>President</p> -->
                     </div>
-                    <div class="team-img">
+                    <div data-aos="zoom-in" class="team-img">
                     <img src="images/salina.jpg" alt="" />
                     <h4 class="p__text">Salina Nichols</h4>
                     <!-- <p>President</p> -->
@@ -190,10 +210,10 @@
         <section id="contact" class="flex-columns">
             <div class="row">
                 <div class="column">
-                    <div id="map" class="map_home"></div>
+                    <div data-aos="fade-right" id="map" class="map_home"></div>
                 </div>
                 <div class="column">
-                    <div class="contact_home column-2 bg-light-glass">
+                    <div data-aos="fade-left" class="contact_home column-2 bg-light-glass">
                         <h2>Request Callback</h2>
                         <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="callback-form">
                             <div class="form-control">
@@ -229,36 +249,45 @@
         <p>Copyright &copy; 2021 - B.O.M Reptiles</p>
     </footer>
 
-    <script
+<script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTjSmsYnzVT1mDk-WfuYjBWX3alILPUAQ&callback=initMap&libraries=&v=weekly&channel=2"
       async>
-    </script>
+</script>
 
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous">
-    </script>
+</script>
 
-    <script src="lightbox.min.js"></script>
+<script src="lightbox.min.js"></script>
 
-    <script>
-        const navbar = document.getElementById('navbar');
-        let scrolled = false;
+<script>        // navbar on scroll 
+const navbar = document.getElementById('navbar');
+let scrolled = false;
 
-        window.onscroll = function () {
-            if (window.pageYOffset > 100) {
-                navbar.classList.remove('top');
-                if (!scrolled) {
-                    navbar.style.transform = 'translateY(-70px)';
-                }
-                setTimeout(function () {
-                    navbar.style.transform = 'translateY(0)';
-                    scrolled = true;
-                }, 200);
-            } else {
-                navbar.classList.add('top');
-                scrolled = false;
-            }
-        };
+window.onscroll = function () {
+    if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+        }, 0);
+    } else {
+        navbar.classList.add('top');
+        scrolled = false;
+    }
+};
 
         // Smooth Scrolling
         $('#navbar a, .btn').on('click', function (e) {
@@ -275,6 +304,7 @@
                 );
             }
         });
+
     </script>
 
     <script src="app.js"></script>
