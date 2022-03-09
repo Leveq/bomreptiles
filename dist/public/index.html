@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/0e9482b51e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,12 +20,13 @@
                 <span class="text-primary"> BOM</span> Reptiles
             </h1>
             <nav>
-                <ul>
+                <i id="burger" class="fa fa-bars"></i>
+                <ul class="nav__list">
                     <li><a href="feeders.html">Feeders</a></li>
                     <li><a href="#">Supplies</a></li>
                     <li><a href="#">Merch</a></li>
                     <li>
-                        <a href="#">Services <i class="fa fa-chevron-down"></i></a>
+                        <a href="javascript:void(0)">Services <i class="fa fa-chevron-down"></i></a>
                         <ul class="sub__menu">
                             <li><a href="#">Nail Trimming</a></li>
                             <li><a href="#">Shed Assist</a></li>
@@ -34,14 +34,14 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Education <i class="fa fa-chevron-down"></i></a>
+                        <a href="javascript:void(0)">Education <i class="fa fa-chevron-down"></i></a>
                         <ul class="sub__menu">
                             <li><a href="#">Care Sheets</a></li>
                             <li><a href="#">Tutorials</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">More <i class="fa fa-chevron-down"></i></a>
+                        <a href="javascript:void(0)">More <i class="fa fa-chevron-down"></i></a>
                         <ul class="sub__menu">
                             <li><a href="#">Adoption Center</a></li>
                             <li><a href="#contact">Contact Us</a></li>
@@ -65,31 +65,31 @@
         <!-- About: Icons -->
         <section id="about" class="icons ">
             <div class="flex-items">
-                <div data-aos="fade-right">
-                    <img class="icon-png" src="images/tortoise.png" alt="">
+                <div>
+                    <img data-aos="fade-right" class="icon-png" src="images/tortoise.png" alt="">
                     <div>
-                        <h3>Reptiles</h3>
-                        <p>
+                        <h3 data-aos="fade-right">Reptiles</h3>
+                        <p data-aos="fade-right">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Tempore, iusto!
                         </p>
                     </div>
                 </div>
-                <div data-aos="fade-up">
-                    <img src="images/rat (1).png" alt="" class="icon-png">
+                <div>
+                    <img data-aos="fade-up" src="images/rat (1).png" alt="" class="icon-png">
                     <div>
-                        <h3>Feeders</h3>
-                        <p class="p__text">
+                        <h3 data-aos="fade-up">Feeders</h3>
+                        <p data-aos="fade-up" class="p__text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Tempore, iusto!
                         </p>
                     </div>
                 </div>
-                <div data-aos="fade-left">
-                    <img src="images/creature.png" alt="" class="icon-png">
+                <div >
+                    <img data-aos="fade-left" src="images/creature.png" alt="" class="icon-png">
                     <div>
-                        <h3>Enviorments</h3>
-                        <p>
+                        <h3 data-aos="fade-left">Enviorments</h3>
+                        <p data-aos="fade-left">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Tempore, iusto!
                         </p>
@@ -101,22 +101,22 @@
         <!-- About:Solutions -->
         <section class="solutions flex-columns">
             <div class="row">
-                <div data-aos="fade-right" class="column">
+                <div class="column">
                     <div class="column-1">
-                        <img src="images/shop.jpg" alt="" />
+                        <img data-aos="fade-right" src="images/shop.jpg" alt="" />
                     </div>
                 </div>
-                <div data-aos="fade-left" class="column">
+                <div class="column">
                     <div class="column-2 bg-primary glass">
-                        <h4>What you are looking for</h4>
-                        <h2>We provide custom solutions</h2>
-                        <p class="p__text">
+                        <h4 data-aos="fade-left">What you are looking for</h4>
+                        <h2 data-aos="fade-left">We provide custom solutions</h2>
+                        <p data-aos="fade-left" class="p__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
                             illum, animi earum ea amet sequi reiciendis sit corporis sunt
                             iusto cupiditate odio maxime adipisci cumque eligendi nemo
                             dolore id itaque?
                         </p>
-                        <a href="#" class="btn btn-outline">
+                        <a data-aos="fade-left" href="#" class="btn btn-outline">
                             <i class="fas fa-chevron"></i>
                             Read More
                         </a>
@@ -129,8 +129,8 @@
         <section id="cases" class="section-padding">
             <header class="section-header">
                 <!-- <h4>This is what we do</h4> -->
-                <h2>Custom Enclosures</h2>
-                <p class="p__text">
+                <h2 data-aos="zoom-in-up">Custom Enclosures</h2>
+                <p data-aos="zoom-in-up" class="p__text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
                     dolore!
                 </p>
@@ -165,18 +165,18 @@
         <!-- Feeders -->
         <section id="Feeders" class="flex-columns flex-reverse">
             <div class="row">
-                <div data-aos="fade-left" class="column feedersx3">
-                    <img src="images/feedersx3.png" alt="" />
+                <div class="column feedersx3">
+                    <img data-aos="fade-left" src="images/feedersx3.png" alt="" />
                 </div>
 
                 <div class="column">
-                    <div data-aos="fade-right" class="column-2 bg-secondary feed-home glass">
+                    <div class="column-2 bg-secondary feed-home glass">
                         <!-- <h4>April 16 2020</h4> -->
-                        <h2>Feeders Menu</h2>
-                        <p>
+                        <h2 data-aos="fade-right">Feeders Menu</h2>
+                        <p data-aos="fade-right">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi facere aspernatur quos quia vel commodi fugit, maiores quasi sed quas quidem maxime praesentium qui ducimus quod enim expedita assumenda eaque! Ab dolorem incidunt ipsum cumque? Eius provident tempora suscipit repellat voluptatibus repudiandae sed. Laborum debitis impedit accusamus fuga aut?
                         </p>
-                        <a href="feeders.html" class="btn btn-outline">
+                        <a data-aos="fade-right" href="feeders.html" class="btn btn-outline">
                             <i class="fas fa-chevron-circle-right"></i>
                             Menu
                         </a>
@@ -213,9 +213,9 @@
                     <div data-aos="fade-right" id="map" class="map_home"></div>
                 </div>
                 <div class="column">
-                    <div data-aos="fade-left" class="contact_home column-2 bg-light-glass">
-                        <h2>Request Callback</h2>
-                        <form name="contact" method="POST" data-netlify="true" onSubmit="submit" class="callback-form">
+                    <div class="contact_home column-2 bg-light-glass">
+                        <h2 data-aos="fade-left">Request Callback</h2>
+                        <form data-aos="fade-left" name="contact" method="POST" data-netlify="true" onSubmit="submit" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
                                 <input type="text" name="name" id="name" placeholder="Enter name" />
@@ -248,6 +248,8 @@
         </div>
         <p>Copyright &copy; 2021 - B.O.M Reptiles</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/0e9482b51e.js" crossorigin="anonymous"></script>
 
 <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTjSmsYnzVT1mDk-WfuYjBWX3alILPUAQ&callback=initMap&libraries=&v=weekly&channel=2"

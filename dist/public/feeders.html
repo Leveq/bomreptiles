@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  
-    <script src="https://kit.fontawesome.com/0e9482b51e.js" crossorigin="anonymous"></script>
     <title>Feeders | Rat & Mice</title>
 </head>
 
@@ -24,12 +23,33 @@
                 <span class="text-primary"> BOM</span> Reptiles
             </h1>
             <nav>
-                <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#cases">Cases</a></li>
-                    <li><a href="#prices">Prices</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <i id="burger" class="fa fa-bars"></i>
+                <ul class="nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Supplies</a></li>
+                    <li><a href="#">Merch</a></li>
+                    <li>
+                        <a href="javascript:void(0)">Services <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub__menu">
+                            <li><a href="#">Nail Trimming</a></li>
+                            <li><a href="#">Shed Assist</a></li>
+                            <li><a href="#">Fecal Parasite Testing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Education <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub__menu">
+                            <li><a href="#">Care Sheets</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">More <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub__menu">
+                            <li><a href="#">Adoption Center</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>  
@@ -451,6 +471,8 @@
     <p>Copyright &copy; 2021 - B.O.M Reptiles</p>
 </footer>
 
+<script src="https://kit.fontawesome.com/0e9482b51e.js" crossorigin="anonymous"></script>
+
 <script>
     const navbar = document.getElementById('navbar');
     let scrolled = false;
@@ -464,7 +486,7 @@
             setTimeout(function () {
                 navbar.style.transform = 'translateY(0)';
                 scrolled = true;
-            }, 200);
+            }, 0);
         } else {
             navbar.classList.add('top');
             scrolled = false;
