@@ -30,7 +30,7 @@ fetch(endpoint)
 // flip card function
 const card = document.querySelectorAll("#card-d, #card-e");
   card.forEach(card => {
-    card.addEventListener('click', (e) =>{
+    card.addEventListener('click', (e) => {
       card.classList.toggle('flipCard')
     })
   });
@@ -46,6 +46,15 @@ const navSlide = () => {
 
 navSlide();
 
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 
 
 

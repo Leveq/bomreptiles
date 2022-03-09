@@ -8,49 +8,50 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/lightbox.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Welcome | B.O.M Reptiles</title>
 </head>
 
 <body id="home">
     <header class="hero">
         <img alt="" id="hero">
-        <div id="navbar" class="navbar top">
+            <div class="navbar" id="myTopnav">
             <h1 class="logo">
                 <span class="text-primary"> BOM</span> Reptiles
             </h1>
-            <nav>
-                <i id="burger" class="fa fa-bars"></i>
-                <ul class="nav__list">
-                    <li><a href="feeders.html">Feeders</a></li>
-                    <li><a href="#">Supplies</a></li>
-                    <li><a href="#">Merch</a></li>
-                    <li>
-                        <a href="javascript:void(0)">Services <i class="fa fa-chevron-down"></i></a>
-                        <ul class="sub__menu">
-                            <li><a href="#">Nail Trimming</a></li>
-                            <li><a href="#">Shed Assist</a></li>
-                            <li><a href="#">Fecal Parasite Testing</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Education <i class="fa fa-chevron-down"></i></a>
-                        <ul class="sub__menu">
-                            <li><a href="#">Care Sheets</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">More <i class="fa fa-chevron-down"></i></a>
-                        <ul class="sub__menu">
-                            <li><a href="#">Adoption Center</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
+            <a href="#home" class="active">Home</a>
+            <a href="feeders.html">Feeders</a>
+            <a href="javascript:void(0);">Supplies</a>
+            <a href="javascript:void(0);">Merch</a>
+            <div class="dropdown">
+              <button class="dropbtn">Services 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);">Nail Trimming</a>
+                <a href="javascript:void(0);">Shed Assist</a>
+                <a href="javascript:void(0);">Fecal Parasite Testing</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Education 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="javascript:void(0);">Care Sheets</a>
+                  <a href="javascript:void(0);">Tutorials</a>
+                </div>
+              </div> 
+              <div class="dropdown">
+                <button class="dropbtn">More 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="javascript:void(0);">Adoption Center</a>
+                  <a href="#contact">Contact Us</a>
+                </div>
+              </div>
+            <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
         <div class="content">
             <h1>Bottom of the Map Reptiles</h1>
             <p>We make custom enclosures, provide quality feeders, pet Education and Services
@@ -256,15 +257,6 @@
       async>
 </script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
-
 <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous">
 </script>
@@ -272,7 +264,7 @@
 <script src="lightbox.min.js"></script>
 
 <script>        // navbar on scroll 
-const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('myTopnav');
 let scrolled = false;
 
 window.onscroll = function () {
@@ -292,7 +284,7 @@ window.onscroll = function () {
 };
 
         // Smooth Scrolling
-        $('#navbar a, .btn').on('click', function (e) {
+        $('#myTopnav a, .btn').on('click', function (e) {
             if (this.hash !== '') {
                 e.preventDefault();
 
