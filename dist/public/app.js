@@ -54,7 +54,7 @@ function myFunction() {
   } else {
     x.className = "navbar";
   }
-}
+};
 
 
 

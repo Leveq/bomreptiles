@@ -167,6 +167,12 @@ img {
   position: absolute;
 }
 
+.content object {
+  display: block;
+  margin-bottom: 2rem;
+  z-index: 9;
+}
+
 .content {
   animation: fadeInUp 0.5s;
 }
@@ -521,10 +527,11 @@ img {
     float: none;
     display: block;
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 0 0 0;
   }
   .navbar.responsive .dropdown {
     float: none;
+    justify-content: center;
   }
   .navbar.responsive .dropdown-content {
     position: relative;
