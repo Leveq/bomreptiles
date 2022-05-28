@@ -1,3 +1,3 @@
 # BOM Reptiles 
  ## Rough draft
-Just a quick mock up of BOM Reptiles 
+Just a quick mock-up of BOM Reptiles 
