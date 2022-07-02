@@ -1,5 +1,5 @@
-BOM Reptiles 
-### Rough draft
+### BOM Reptiles 
+#### Rough draft
 ---
  
 Just a quick mock-up of BOM Reptiles, I mainly wanted to practice CSS
